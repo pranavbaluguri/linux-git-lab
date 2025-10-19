@@ -1,0 +1,12 @@
+# OS/editor
+.DS_Store
+*.swp
+# Logs & temp
+*.log
+tmp/
+*.tmp
+# Archives
+*.tar
+# Python venv just in case
+venv/
+__pycache__/

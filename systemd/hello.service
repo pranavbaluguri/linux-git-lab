@@ -1,0 +1,14 @@
+[Unit]
+Description=Hello World demo (Python HTTP server)
+After=network.target
+
+[Service]
+Type=simple
+User=pb
+WorkingDirectory=/opt/hello
+ExecStart=/usr/bin/python3 -m http.server 8080 --directory /opt/hello
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
